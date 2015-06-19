@@ -1,0 +1,17 @@
+{
+  "name": "atom-material-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "Material Design Syntax",
+  "keywords": [
+    "syntax",
+    "theme",
+    "material",
+    "material design"
+  ],
+  "repository": "https://github.com/silvestreh/atom-material-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  }
+}
