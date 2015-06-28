@@ -1,6 +1,9 @@
 // This defines all syntax variables that syntax themes must implement when they
 // include a syntax-variables.less file.
 
+@syntax-cursor-line: hsla(220, 100%,  80%, .04); // needs to be semi-transparent to show serach results
+@syntax-bracket-matcher-background-color: lighten(@syntax-background-color, 8%);
+
 // General colors
 @syntax-text-color: #CDD3DE;
 @syntax-cursor-color: #c0c5ce;
@@ -24,7 +27,7 @@
 
 // For git diff info. i.e. in the gutter
 // These are static and were not extracted from your textmate theme
-@syntax-color-renamed: #96CBFE;
-@syntax-color-added: #A8FF60;
-@syntax-color-modified: #E9C062;
-@syntax-color-removed: #CC6666;
+@syntax-color-renamed: #64B5F6;
+@syntax-color-added: #9CCC65;
+@syntax-color-modified: #FFEE58;
+@syntax-color-removed: #EF5350;
