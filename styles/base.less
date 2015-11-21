@@ -42,6 +42,7 @@ atom-text-editor .search-results .marker.current-result .region,
 atom-text-editor.is-focused .cursor,
 :host(.is-focused) .cursor {
     border-color: @syntax-cursor-color;
+    border-width: 2px;
 }
 atom-text-editor.is-focused .selection .region,
 :host(.is-focused) .selection .region {
@@ -69,17 +70,17 @@ atom-text-editor.is-focused .line.cursor-line,
     color: #d9f5dd;
 }
 .none {
-    color: rgba(217, 245, 221, 1);
+    color: #d9f5dd;
 }
 .keyword.operator {
-    color: rgba(217, 245, 221, 1);
+    color: #d9f5dd;
 }
 .keyword {
     color: rgba(199, 146, 234, 1);
 }
 .variable {
     color: rgba(255, 83, 112, 1);
-    
+
     .punctuation.definition.variable {
       color: inherit;
     }
@@ -219,7 +220,7 @@ atom-text-editor.is-focused .line.cursor-line,
     color: #f77669;
 }
 .meta.separator {
-    color: rgba(217, 245, 221, 1);
+    color: #d9f5dd;
     background-color: rgba(30, 52, 69, 1);
 }
 .markup.inserted {
@@ -339,4 +340,5 @@ atom-text-editor.is-focused .line.cursor-line,
     border-bottom: 1px solid @syntax-cursor-color;
     box-sizing: border-box;
     background-color: @syntax-bracket-matcher-background-color;
+    box-shadow: inset 0 -1px 0 @syntax-cursor-color;
 }
