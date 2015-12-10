@@ -76,10 +76,10 @@ atom-text-editor.is-focused .line.cursor-line,
     color: #d9f5dd;
 }
 .keyword {
-    color: rgba(199, 146, 234, 1);
+    color: lighten(@md-deep-purple, 25%);
 }
 .variable {
-    color: rgba(255, 83, 112, 1);
+    color: mix(lighten(desaturate(@md-pink, 12%), 15%), @md-red);
 
     .punctuation.definition.variable {
       color: inherit;
@@ -94,10 +94,8 @@ atom-text-editor.is-focused .line.cursor-line,
 .meta.block-level {
     color: #82b1ff;
 }
-.support.class,
-.entity.name.class,
-.entity.name.type.class {
-    color: #ffcb6b;
+.support.class, .entity.name.class, .entity.name.type.class {
+    color: desaturate(lighten(@md-amber, 15%), 13%);
 }
 .meta.class {
     color: #fff;
@@ -106,7 +104,7 @@ atom-text-editor.is-focused .line.cursor-line,
     color: #82b1ff;
 }
 .storage {
-    color: rgba(199, 146, 234, 1);
+    color: lighten(@md-deep-purple, 25%);
 }
 .support.function,
 .keyword.operator,
@@ -125,48 +123,62 @@ atom-text-editor.is-focused .line.cursor-line,
     color: #c3e88d;
 }
 .constant.numeric {
-    color: #f77669;
+    color: lighten(desaturate(@md-red, 10%), 8%);
 }
 .none {
-    color: #f77669;
+    color: lighten(desaturate(@md-red, 10%), 8%);
 }
 .none {
-    color: #f77669;
+    color: lighten(desaturate(@md-red, 10%), 8%);
 }
 .constant {
-    color: #f77669;
+    color: lighten(desaturate(@md-red, 10%), 8%);
 }
 .entity.name.tag {
-    color: rgba(255, 83, 112, 1);
+    color: mix(lighten(desaturate(@md-pink, 12%), 15%), @md-red);
 }
 .entity.other.attribute-name {
     color: #c3e88d;
-}
-.entity.other.attribute-name.id {
-    color: #fad430;
+
+    &.class.css {
+        color: #FFC55C;
+
+        .punctuation.entity {
+            color: #FFC55C;
+        }
+    }
+    &.id {
+        color: #fad430;
+
+        .punctuation.entity {
+            color: #fad430;
+        }
+    }
+    .punctuation.entity {
+        color: lighten(@md-deep-purple, 25%);
+    }
 }
 .meta.selector {
-    color: rgba(199, 146, 234, 1);
+    color: lighten(@md-deep-purple, 25%);
 }
 .none {
-    color: #f77669;
+    color: lighten(desaturate(@md-red, 10%), 8%);
 }
 .markup.heading .punctuation.definition.heading,
 .entity.name.section {
-    color: rgba(120, 204, 240, 1);
+    color: desaturate(lighten(@md-light-blue, 22%), 15%);
 }
 .keyword.other.unit {
-    color: #f77669;
+    color: lighten(desaturate(@md-red, 10%), 8%);
 }
-.markup.bold,
-.punctuation.definition.bold {
+.markup.bold, .punctuation.definition.bold {
     font-weight: bold;
-    color: #ffcb6b;
+    color: desaturate(lighten(@md-amber, 15%), 13%);
 }
 .markup.italic,
 .punctuation.definition.italic {
     font-style: italic;
-    color: rgba(199, 146, 234, 1);
+    color: lighten(@md-deep-purple, 25%);
 }
 .markup.raw.inline, .markup.raw {
     color: #f1e655;
@@ -211,13 +223,13 @@ atom-text-editor.is-focused .line.cursor-line,
     }
 }
 .meta.link {
-    color: #f77669;
+    color: lighten(desaturate(@md-red, 10%), 8%);
 }
 .markup.list {
-    color: rgba(255, 83, 112, 1);
+    color: mix(lighten(desaturate(@md-pink, 12%), 15%), @md-red);
 }
 .markup.quote {
-    color: #f77669;
+    color: lighten(desaturate(@md-red, 10%), 8%);
 }
 .meta.separator {
     color: #d9f5dd;
@@ -227,10 +239,10 @@ atom-text-editor.is-focused .line.cursor-line,
     color: #f1e655;
 }
 .markup.deleted {
-    color: rgba(255, 83, 112, 1);
+    color: mix(lighten(desaturate(@md-pink, 12%), 15%), @md-red);
 }
 .markup.changed {
-    color: rgba(199, 146, 234, 1);
+    color: lighten(@md-deep-purple, 25%);
 }
 .constant.other.color,
 .meta.property-value .support.constant.named-color.css {
@@ -252,7 +264,7 @@ atom-text-editor.is-focused .line.cursor-line,
 }
 .invalid.broken {
     color: rgba(2, 14, 20, 1);
-    background-color: #f77669;
+    background-color: lighten(desaturate(@md-red, 10%), 8%);
 }
 .invalid.deprecated {
     color: rgba(255, 255, 255, 1);
@@ -328,13 +340,13 @@ atom-text-editor.is-focused .line.cursor-line,
     color: #7986cb;
 }
 .constant.other.color.rgb-value .punctuation.definition.constant {
-    color: #f77669;
+    color: lighten(desaturate(@md-red, 10%), 8%);
 }
 .meta.attribute-selector .string.unquoted.attribute-value {
     color: #c3e88d;
 }
 .meta.attribute-selector .entity.other.attribute-name.attribute {
-    color: #f77669;
+    color: lighten(desaturate(@md-red, 10%), 8%);
 }
 .bracket-matcher .region {
     border-bottom: 1px solid @syntax-cursor-color;
