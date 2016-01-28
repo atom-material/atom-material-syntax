@@ -1,12 +1,18 @@
 // This defines all syntax variables that syntax themes must implement when they
 // include a syntax-variables.less file.
 
+// Initialize @base-color. Just in case.
+@base-color: #009688;
+
+// Overwrite @base-color with the one from Material UI theme.
+@import "ui-variables";
+
 @syntax-cursor-line: hsla(220, 100%,  80%, .04); // needs to be semi-transparent to show serach results
 @syntax-bracket-matcher-background-color: lighten(@syntax-background-color, 8%);
 
 // General colors
 @syntax-text-color: #AABBC3;
-@syntax-cursor-color: @md-teal-300;
+@syntax-cursor-color: @base-color;
 @syntax-selection-color: rgba(128, 203, 196, 0.13);
 @syntax-background-color: #263238;
 @syntax-comments-color: #49656f;
