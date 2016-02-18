@@ -1,0 +1,90 @@
+[data-grammar*="gfm"]::shadow {
+    .markup.underline.link {
+        color: lighten(#ff5370, 10%);
+
+        span.punctuation {
+            color: #ff5370;
+        }
+    }
+    .markup.strike {
+        position: relative;
+        color: fade(@syntax-text-color, 50%);
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: calc(50% + 4px);
+            left: 0;
+            right: 0;
+            height: 1px;
+            background-color: fade(@syntax-text-color, 20%);
+        }
+    }
+    .table .border {
+        color: fade(@syntax-text-color, 50%);
+    }
+    .markup.heading {
+        color: #82b1ff;
+    }
+    .punctuation.definition.begin,
+    .punctuation.definition.end {
+        color: #82b1ff;
+    }
+    .punctuation.definition.begin + span:not(.function.parameter) {
+        color: lighten(#82b1ff, 5%);
+    }
+}
+.bracket-matcher .region {
+    border-bottom: 1px solid @syntax-cursor-color;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: fade(@syntax-text-color, 10%);
+    box-shadow: inset 0 -1px 0 @syntax-cursor-color;
+    z-index: 100;
+}
+atom-text-editor.is-focused .selection .region,
+:host(.is-focused) .selection .region {
+    background-color: @syntax-selection-color;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        border: 2px solid @syntax-selection-color;
+        border-radius: 3px;
+    }
+}
+.meta {
+    &.delimiter.period {
+        color: #c792ea;
+    }
+    &.brace {
+        color: #89DDFF;
+    }
+    &.tag.doctype {
+        color: #c792ea;
+    }
+    .string.quoted {
+        color: #C3E88D;
+    }
+    .punctuation.separator.key-value + .string.quoted {
+        color: #80CBC4;
+
+        * {
+            color: #80CBC4;
+        }
+    }
+}
+.support.constant {
+    color: #89DDFF;
+}
+.keyword {
+    &.operator {
+        &.logical, &.comparison, &.assignment {
+            color: #c792ea;
+        }
+    }
+}
