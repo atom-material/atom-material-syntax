@@ -45,15 +45,7 @@
 atom-text-editor.is-focused .selection .region,
 :host(.is-focused) .selection .region {
     background-color: @syntax-selection-color;
-
-    &:after {
-        content: '';
-        position: absolute;
-        left: -2px;
-        right: -2px;
-        border: 2px solid @syntax-selection-color;
-        border-radius: 3px;
-    }
+    border-radius: 0.125rem;
 }
 .variable {
     &.instance, &.instance > * {
