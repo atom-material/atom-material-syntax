@@ -125,7 +125,7 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
     }
 
     &.syntax--parameter.syntax--function {
-        color: @red;
+        color: @strong-orange;
     }
 
     &.syntax--language {
@@ -387,11 +387,15 @@ atom-text-editor[mini] .scroll-view {
 }
 
 // Bracket Matcher
+atom-text-editor {
+    .highlight .region.bracket-matcher {
+        z-index: inherit;
+    }
+}
+
 .bracket-matcher .region {
     border-bottom: 1px solid @syntax-cursor-color;
     box-sizing: border-box;
-    text-align: center;
     background-color: fade(@syntax-text-color, 10%);
     box-shadow: inset 0 -1px 0 @syntax-cursor-color;
-    z-index: 100;
 }
