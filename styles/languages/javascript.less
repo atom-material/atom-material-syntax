@@ -1,0 +1,19 @@
+.syntax--js {
+    .syntax--constant {
+        color: @very-light-gray;
+    }
+
+    .syntax--support {
+        &.syntax--variable {
+            &.syntax--property {
+                color: @strong-orange;
+            }
+        }
+    }
+
+    .syntax--variable {
+        &.syntax--property {
+            color: @very-light-gray;
+        }
+    }
+}

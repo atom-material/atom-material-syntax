@@ -6,7 +6,7 @@
 // General colors
 @syntax-text-color: @very-light-gray;
 @syntax-cursor-color: @teal;
-@syntax-selection-color: darken(@syntax-background-color, 2.5%);
+@syntax-selection-color: darken(@syntax-background-color, 5%);
 @syntax-background-color: @very-dark-gray;
 @syntax-comment-color: lighten(@very-dark-gray, 20%);
 
@@ -23,7 +23,7 @@
 @syntax-gutter-text-color: fade(@syntax-text-color, 20%);
 @syntax-gutter-text-color-selected: @syntax-gutter-text-color;
 @syntax-gutter-background-color: @syntax-background-color;
-@syntax-gutter-background-color-selected: lighten(@syntax-background-color, 2.5%);
+@syntax-gutter-background-color-selected: darken(@syntax-background-color, 5%);
 
 // For git diff info. i.e. in the gutter
 @syntax-color-renamed: @blue;
