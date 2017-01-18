@@ -6,13 +6,24 @@
     .syntax--support {
         &.syntax--variable {
             &.syntax--property {
-                color: @strong-orange;
+                color: @very-light-gray;
+            }
+        }
+    }
+
+    .syntax--entity {
+        &.syntax--name {
+            &.syntax--type {
+                color: @orange;
             }
         }
     }
 
     .syntax--variable {
         &.syntax--property {
+            color: @blue;
+        }
+        &.syntax--other.syntax--object {
             color: @very-light-gray;
         }
     }
