@@ -29,6 +29,15 @@
         &.syntax--other.syntax--object {
             color: @very-light-gray;
         }
+        &.syntax--other.syntax--object.syntax--property {
+            color: @blue;
+        }
+    }
+
+    .syntax--string.syntax--quoted.syntax--template {
+      .syntax--other.syntax--object.syntax--property {
+          color: @green;
+      }
     }
 
     .syntax--constant {
