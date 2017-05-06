@@ -11,13 +11,17 @@
 
     .syntax--keyword {
         &.syntax--unit {
-            color: @light-orange;
+            color: @strong-orange;
         }
     }
 
     .syntax--constant {
+        &.syntax--numeric {
+            color: @light-orange;
+        }
+
         &.syntax--color {
-            color: @strong-orange;
+            color: @light-orange;
 
             .syntax--punctuation {
                 color: currentColor;
@@ -28,6 +32,20 @@
     .syntax--entity {
         &.syntax--tag {
             color: @light-gray;
+        }
+
+        &.syntax--id {
+            color: @purple;
+        }
+    }
+
+    .syntax--punctuation {
+        &.syntax--delimiter {
+            color: @cyan;
+
+            + .syntax--constant.syntax--numeric:not(.syntax--color) {
+                color: @strong-orange;
+            }
         }
     }
 }
