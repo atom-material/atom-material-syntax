@@ -1,6 +1,8 @@
-![](http://i.imgur.com/f58FC9u.png)
----
 
-A syntax theme for [Atom Material UI](https://github.com/silvestreh/atom-material-ui). Inspired by Mattia Astorino's [SublimeText theme](https://github.com/equinusocio/material-theme).
+## mariana-syntax
 
-![screenshot](http://i.imgur.com/3YQeDps.png)
+A syntax theme for Atom based off of Sublime Text's Mariana syntax colors.
+
+(originally forked from atom-material-syntax)
+
+![screenshot](https://cloud.githubusercontent.com/assets/1899941/26525830/c3fd8a2e-4331-11e7-837c-26d84e9af722.png)
