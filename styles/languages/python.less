@@ -1,14 +1,14 @@
 .syntax--python {
     .syntax--meta {
         &.syntax--function-call {
-            color: @blue;
+            color: @very-light-gray;
 
             .syntax--punctuation {
                 color: @cyan;
             }
 
             .syntax--arguments {
-                color: @indigo;
+                color: @very-light-gray;
 
                 &.syntax--punctuation {
                     color: @cyan;
@@ -33,13 +33,21 @@
 
     .syntax--variable {
         &.syntax--parameter {
-            color: @cyan;
+            color: @very-light-gray;
         }
     }
 
     .syntax--keyword {
         &.syntax--operator {
             color: @purple;
+            &.syntax--assignment,
+            &.syntax--comparison {
+              color: @strong-orange;
+            }
+        }
+
+        &.syntax--import {
+          color: @strong-orange;
         }
     }
 }

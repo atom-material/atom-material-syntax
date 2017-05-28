@@ -1,9 +1,11 @@
 [data-grammar*="gfm"] {
     .syntax--markup.syntax--underline.syntax--link {
-        color: lighten(@pink, 10%);
+        color: @blue;
+        font-style:italic;
+        text-decoration: underline;
 
         span.syntax--punctuation {
-            color: @pink;
+            color: @teal;
         }
     }
     .syntax--markup.syntax--strike {
@@ -23,14 +25,15 @@
     .syntax--table .syntax--border {
         color: fade(@syntax-text-color, 50%);
     }
-    .syntax--markup.syntax--heading {
-        color: @blue;
-    }
     .syntax--punctuation.syntax--definition.syntax--begin,
     .syntax--punctuation.syntax--definition.syntax--end {
-        color: @blue;
+        color: @teal;
     }
     .syntax--punctuation.syntax--definition.syntax--begin + span:not(.syntax--function.syntax--parameter) {
-        color: lighten(@blue, 5%);
+        color: lighten(@teal, 5%);
+    }
+
+    .syntax--link .syntax--entity {
+        color: @blue;
     }
 }

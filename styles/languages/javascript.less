@@ -14,6 +14,16 @@
         }
     }
 
+    .syntax--extends.syntax--class,
+    .syntax--type.syntax--class {
+      color: @purple;
+      font-style: italic;
+    }
+
+    .syntax--keyword {
+      color: @strong-orange;
+    }
+
     .syntax--entity {
         &.syntax--name {
             &.syntax--type {
@@ -24,13 +34,13 @@
 
     .syntax--variable {
         &.syntax--property {
-            color: @blue;
+            color: @very-light-gray;
         }
         &.syntax--other.syntax--object {
             color: @very-light-gray;
         }
         &.syntax--other.syntax--object.syntax--property {
-            color: @blue;
+            color: @very-light-gray;
         }
     }
 
@@ -54,7 +64,29 @@
     .syntax--punctuation.syntax--end,
     .syntax--delimiter.syntax--object.syntax--comma,
     .syntax--brace.syntax--curly {
-        color: @cyan;
+        color: @very-light-gray;
+    }
+
+    .syntax--class.syntax--punctuation.syntax--begin,
+    .syntax--class.syntax--punctuation.syntax--end,
+    .syntax--class.syntax--delimiter.syntax--object.syntax--comma,
+    .syntax--class.syntax--brace.syntax--curly {
+        color: @teal;
+    }
+
+    .syntax--method {
+
+      .syntax--entity.syntax--name.syntax--function {
+        color: @teal;
+      }
+      .syntax--brace.syntax--round {
+        color: @teal;
+      }
+    }
+
+    .syntax--jsx.syntax--attribute-name {
+      color: @purple;
+      font-style: italic !importan  t;
     }
 
     .syntax--export .syntax--variable.syntax--default {
