@@ -1,9 +1,9 @@
 .syntax--js {
-    .syntax--constant {
+    &.syntax--constant {
         color: @very-light-gray;
     }
 
-    .syntax--support {
+    &.syntax--support {
         &.syntax--variable {
             &.syntax--property {
                 color: @very-light-gray;
@@ -14,7 +14,7 @@
         }
     }
 
-    .syntax--entity {
+    &.syntax--entity {
         &.syntax--name {
             &.syntax--type {
                 color: @orange;
@@ -22,7 +22,7 @@
         }
     }
 
-    .syntax--variable {
+    &.syntax--variable {
         &.syntax--property {
             color: @blue;
         }
@@ -34,13 +34,13 @@
         }
     }
 
-    .syntax--string.syntax--quoted.syntax--template {
+    &.syntax--string.syntax--quoted.syntax--template {
       .syntax--other.syntax--object.syntax--property {
           color: @green;
       }
     }
 
-    .syntax--constant {
+    &.syntax--constant {
         &.syntax--numeric {
             color: @strong-orange;
         }
@@ -50,14 +50,18 @@
         }
     }
 
-    .syntax--punctuation.syntax--begin,
-    .syntax--punctuation.syntax--end,
-    .syntax--delimiter.syntax--object.syntax--comma,
-    .syntax--brace.syntax--curly {
+    &.syntax--punctuation.syntax--begin,
+    &.syntax--punctuation.syntax--end,
+    &.syntax--delimiter.syntax--object.syntax--comma,
+    &.syntax--brace.syntax--curly {
         color: @cyan;
+
+        .syntax--comment & {
+            color: @syntax-comment-color;
+        }
     }
 
-    .syntax--export .syntax--variable.syntax--default {
+    &.syntax--export .syntax--variable.syntax--default {
         color: @purple;
     }
 }
