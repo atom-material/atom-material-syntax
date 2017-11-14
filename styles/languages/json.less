@@ -1,0 +1,39 @@
+.syntax--json {
+    .syntax--meta {
+        &.syntax--array.syntax--structure .syntax--string.syntax--quoted.syntax--double {
+            color: @green;
+
+            > * {
+                color: currentColor;
+
+                &.syntax--punctuation {
+                    &.syntax--begin, &.syntax--end {
+                        color: @cyan;
+                    }
+                }
+            }
+        }
+
+        .syntax--punctuation.syntax--separator.syntax--key-value + .syntax--string.syntax--quoted {
+            color: @green;
+
+            * {
+                color: currentColor;
+
+                &.syntax--punctuation {
+                    &.syntax--begin, &.syntax--end {
+                        color: @cyan;
+                    }
+                }
+            }
+        }
+
+        &.syntax--structure.syntax--dictionary .syntax--string.syntax--quoted {
+            color: @purple;
+
+            .syntax--punctuation.syntax--string {
+                color: currentColor;
+            }
+        }
+    }
+}

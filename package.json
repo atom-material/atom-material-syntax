@@ -1,7 +1,8 @@
 {
   "name": "atom-sparta-syntax",
   "theme": "syntax",
-  "version": "0.2.4",
+
+  "version": "1.0.7",
   "description": "A dark syntax theme for Atom based on atom-material-syntax",
   "keywords": [
     "syntax",
@@ -12,6 +13,6 @@
   "repository": "https://github.com/prodigerati/atom-sparta-syntax",
   "license": "MIT",
   "engines": {
-    "atom": ">=0.174.0 <2.0.0"
+    "atom": ">=1.13.0 <2.0.0"
   }
 }

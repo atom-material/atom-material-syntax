@@ -1,8 +1,7 @@
+@import "colors";
+
 // This defines all syntax variables that syntax themes must implement when they
 // include a syntax-variables.less file.
-
-@syntax-cursor-line: hsla(220, 100%,  80%, .04); // needs to be semi-transparent to show serach results
-@syntax-bracket-matcher-background-color: lighten(@syntax-background-color, 8%);
 
 // General colors
 @syntax-text-color: #CDD3DE;
@@ -26,9 +25,29 @@
 @syntax-gutter-background-color: #222222;
 @syntax-gutter-background-color-selected: rgba(0, 0, 0, 0.19);
 
+@syntax-text-color: @very-light-gray;
+@syntax-cursor-color: @teal;
+@syntax-selection-color: lighten(@syntax-background-color, 10%);
+@syntax-background-color: @very-dark-gray;
+@syntax-comment-color: lighten(@very-dark-gray, 20%);
+
+// Guide colors
+@syntax-wrap-guide-color: @dark-gray;
+@syntax-indent-guide-color: lighten(@syntax-background-color, 2.5%);
+@syntax-invisible-character-color: @gray;
+
+// For find and replace markers
+@syntax-result-marker-color: @light-gray;
+@syntax-result-marker-color-selected: white;
+
+// Gutter colors
+@syntax-gutter-text-color: fade(@syntax-text-color, 20%);
+@syntax-gutter-text-color-selected: @syntax-gutter-text-color;
+@syntax-gutter-background-color: @syntax-background-color;
+@syntax-gutter-background-color-selected: darken(@syntax-background-color, 5%);
+
 // For git diff info. i.e. in the gutter
-// These are static and were not extracted from your textmate theme
-@syntax-color-renamed: #64B5F6;
-@syntax-color-added: #9CCC65;
-@syntax-color-modified: #FFEE58;
-@syntax-color-removed: #EF5350;
+@syntax-color-renamed: @blue;
+@syntax-color-added: @green;
+@syntax-color-modified: @orange;
+@syntax-color-removed: @red;

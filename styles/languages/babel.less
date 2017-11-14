@@ -1,0 +1,16 @@
+.syntax--jsx {
+    &.syntax--component {
+        color: @red;
+    }
+}
+
+atom-text-editor {
+    // Over-nesting to override `language-babel` default styles.
+    .syntax--source.syntax--js.syntax--jsx {
+        .syntax--jsx {
+            .syntax--entity.syntax--other.syntax--attribute-name {
+                font-style: normal;
+            }
+        }
+    }
+}

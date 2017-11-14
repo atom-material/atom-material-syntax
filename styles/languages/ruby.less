@@ -1,0 +1,21 @@
+.syntax--ruby {
+    .syntax--punctuation {
+        &.syntax--separator {
+            color: @cyan;
+        }
+    }
+
+    .syntax--variable {
+        &.syntax--block {
+            color: @red;
+        }
+
+        &.syntax--instance {
+            color: @red;
+
+            .syntax--punctuation {
+                color: currentColor;
+            }
+        }
+    }
+}
