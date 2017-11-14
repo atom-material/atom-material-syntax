@@ -4,6 +4,27 @@
 // include a syntax-variables.less file.
 
 // General colors
+@syntax-text-color: #CDD3DE;
+@syntax-cursor-color: #c0c5ce;
+@syntax-selection-color: rgba(216, 219, 219, 0.13);
+@syntax-background-color: #222222;
+@syntax-comments-color: #707070;
+
+// Guide colors
+@syntax-wrap-guide-color: #65737E;
+@syntax-indent-guide-color: #65737E;
+@syntax-invisible-character-color: #65737E;
+
+// For find and replace markers
+@syntax-result-marker-color: #7C7373;
+@syntax-result-marker-color-selected: #D5CCCC;
+
+// Gutter colors
+@syntax-gutter-text-color: @syntax-comments-color;
+@syntax-gutter-text-color-selected: #CDD3DE;
+@syntax-gutter-background-color: #222222;
+@syntax-gutter-background-color-selected: rgba(0, 0, 0, 0.19);
+
 @syntax-text-color: @very-light-gray;
 @syntax-cursor-color: @teal;
 @syntax-selection-color: lighten(@syntax-background-color, 10%);
