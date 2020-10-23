@@ -1,39 +1,23 @@
 .syntax--json {
-    .syntax--meta {
-        &.syntax--array.syntax--structure .syntax--string.syntax--quoted.syntax--double {
-            color: @green;
-
-            > * {
-                color: currentColor;
-
-                &.syntax--punctuation {
-                    &.syntax--begin, &.syntax--end {
-                        color: @cyan;
-                    }
-                }
-            }
-        }
-
-        .syntax--punctuation.syntax--separator.syntax--key-value + .syntax--string.syntax--quoted {
-            color: @green;
-
-            * {
-                color: currentColor;
-
-                &.syntax--punctuation {
-                    &.syntax--begin, &.syntax--end {
-                        color: @cyan;
-                    }
-                }
-            }
-        }
-
-        &.syntax--structure.syntax--dictionary .syntax--string.syntax--quoted {
-            color: @purple;
-
-            .syntax--punctuation.syntax--string {
-                color: currentColor;
-            }
-        }
+  .syntax--meta.syntax--structure.syntax--dictionary.syntax--json {
+    & > .syntax--string.syntax--quoted.syntax--json {
+      & > .syntax--punctuation.syntax--string {
+        color: @purple;
+      }
+      color: @purple;
     }
+  }
+
+  .syntax--meta.syntax--structure.syntax--dictionary.syntax--json, .syntax--meta.syntax--structure.syntax--array.syntax--json {
+    & > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json,
+    & > .syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--json > .syntax--punctuation {
+      color: @green;
+
+      &.syntax--punctuation {
+          &.syntax--begin, &.syntax--end {
+              color: @cyan;
+          }
+      }
+    }
+  }
 }
