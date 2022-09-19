@@ -1,17 +1,23 @@
-{
-  "name": "atom-material-syntax",
-  "theme": "syntax",
-  "version": "1.0.8",
-  "description": "A dark syntax theme for Atom that uses Google's Material Design color palette",
+  "name": "trik-mudah-menang-pkv-games",
+  "theme": "pkvgames",
+  "version": "1.2.1",
+  "description": "Panduan tips dan trik mudah menang judi pkv games poker online, domino qiu qiu, bandarq, gaple online cara paling ampuh menang terus judi pkv",
   "keywords": [
-    "syntax",
-    "theme",
-    "material",
-    "material design"
+    "pkvgames",
+    "pkv games",
+    "pkv games resmi",
+    "situs pkv",
+    "agen pkv",
+    "pkv qq",
+    "qq online",
+    "dominoqq",
+    "bandarqq",
+    "trik menang pkv",
+    "cara menang pkv games"
   ],
-  "repository": "https://github.com/silvestreh/atom-material-syntax",
+  "repository": "https://github.com/judi365/trik-mudah-menang-pkv-games",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.13.0 <2.0.0"
+    "atom": ">=1.0.0 <2.0.0"
   }
 }
